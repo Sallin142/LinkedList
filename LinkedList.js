@@ -1,3 +1,4 @@
+
 class LSNode{
     constructor(val, next = null){
         this.val = val;
@@ -15,3 +16,7 @@ class LinkedList{
 
     }
 }
+
+
+module.exports = LSNode;
+module.exports = LinkedList;
