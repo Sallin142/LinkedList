@@ -15,6 +15,25 @@ class LinkedList{
         this.head = add;
 
     }
+    addToTail(val){
+        let add = new LSNode(val);
+        if(!this.head){
+            this.head = add;
+            return;
+        }
+        let cur = this.head;
+        while(cur.next){
+            cur = cur.next;
+        }
+        cur.next = add;
+    }
+    printList(){
+        let cur = this.head;
+        while(cur){
+            console.log(cur.val);
+            cur = cur.next;
+        }
+    }
 }
 
 
