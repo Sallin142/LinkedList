@@ -4,3 +4,9 @@ class LSNode{
         this.next = next;
     }
 }
+
+class LinkedList{
+    constuctor(){
+        this.head = null;
+    }
+}
