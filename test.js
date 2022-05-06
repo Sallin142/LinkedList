@@ -62,9 +62,6 @@ const Deque = require('./Deque.js');
 // q2.printQueue();
 
 let DL1 = new Deque();
-for(let i = 1; i <= 100; i++){
-    DL1.pushFromBottom(i);
-}
+
 DL1.printDeque();
-DL1.shuffle(5);
-DL1.printDeque();
+
