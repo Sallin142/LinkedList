@@ -1,6 +1,7 @@
 const LinkedList = require('./LinkedList.js');
 const Stack = require('./Stack.js');
 const Queue = require('./Queue.js');
+const DoublyLinkedList = require('./DoublyLinkedList.js');
 // const ls1 = new LinkedList();
 // ls1.addToHead(4);
 // ls1.addToHead(3);
@@ -45,16 +46,24 @@ const Queue = require('./Queue.js');
 // st3.pop();
 // st2.printStack();
 // st3.printStack();
-let q1 = new Queue;
+// let q1 = new Queue;
 
-for(let i = 0; i < 10; i++){
-    q1.enqueue(i);
+// for(let i = 0; i < 10; i++){
+//     q1.enqueue(i);
+// }
+// let q2 = q1.clone();
+
+
+// q1.printQueue();
+// q2.printQueue();
+// q2.dequeue();
+// q1.printQueue();
+// q2.printQueue();
+
+let DL1 = new DoublyLinkedList;
+for(let i = 1; i <= 10; i++){
+    DL1.addToHead(i);
 }
-let q2 = q1.clone();
-
-
-q1.printQueue();
-q2.printQueue();
-q2.dequeue();
-q1.printQueue();
-q2.printQueue();
+DL1.printDoublyLinkedList();
+DL1.removeAtIndex(10);
+DL1.printDoublyLinkedList();
