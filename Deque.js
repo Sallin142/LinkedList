@@ -10,11 +10,21 @@ class Deque extends DoublyLinkedList{
     popFromBottom(){
         return super.removeFromTail();
     }
-    pushFromTop(){
-
+    pushFromTop(val){
+        super.addToHead(val);
     }
-    pushFromBottom(){
-
+    pushFromBottom(val){
+        super.addToTail(val);
+    }
+    shuffle(times){
+        for(let i = 0; i < times; i++){
+            for(let j = 0; j < this.currentSize; j++){
+                super.swap(Math.floor(Math.random() * this.currentSize)+1,Math.floor(Math.random() * this.currentSize)+1);
+            }
+        }
+    }
+    printDeque(){
+        super.printDoublyLinkedList();
     }
 }
 

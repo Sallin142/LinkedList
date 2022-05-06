@@ -61,10 +61,10 @@ const Deque = require('./Deque.js');
 // q1.printQueue();
 // q2.printQueue();
 
-let DL1 = new Deque;
-for(let i = 1; i <= 10; i++){
-    DL1.addToHead(i);
+let DL1 = new Deque();
+for(let i = 1; i <= 100; i++){
+    DL1.pushFromBottom(i);
 }
-DL1.printDoublyLinkedList();
-DL1.removeAtIndex(10);
-DL1.printDoublyLinkedList();
+DL1.printDeque();
+DL1.shuffle(5);
+DL1.printDeque();
