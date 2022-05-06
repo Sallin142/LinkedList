@@ -134,6 +134,30 @@ class DoublyLinkedList{
         }
         console.log(`This list has ${this.currentSize} items`);
     }  
+    swap(a, b){
+        if(a < 1 || a>this.currentSize){
+            return;
+        }
+        if(b < 1 || b>this.currentSize){
+            return;
+        }
+        if(a === b){
+            return;
+        }
+        let curA = this.head;
+        let curB = this.head;
+        for(let i = 1; i <= a-1; i++){
+            curA = curA.next;
+        }
+        for(let i = 1; i <= b-1; i++){
+            curB = curB.next;
+        }
+        let temp = curA.val;
+        curA.val = curB.val;
+        curB.val = temp;
+
+
+    }
 }
 
 module.exports = DLSNode;
