@@ -127,11 +127,11 @@ class DoublyLinkedList{
             console.log(cur.val);
             cur = cur.next;
         }
-        cur = this.tail;
-        while(cur){
-            console.log(cur.val);
-            cur = cur.prev;
-        }
+        // cur = this.tail;
+        // while(cur){
+        //     console.log(cur.val);
+        //     cur = cur.prev;
+        // }
         console.log(`This list has ${this.currentSize} items`);
     }  
     swap(a, b){
