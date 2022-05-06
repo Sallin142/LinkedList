@@ -75,23 +75,23 @@ class DoublyLinkedList{
         }
         return del.val;
     }
-    addAtIndex(val, atIndex){
-        if(atIndex < 1 || atIndex > this.currentSize+1){
+    addAtIndex(val, atCard){
+        if(atCard < 1 || atCard > this.currentSize+1){
             return;
         }
        
-        if(atIndex == 1){
+        if(atCard == 1){
             this.addToHead(val);
             return;
         }
-        if(atIndex == this.currentSize+1){
+        if(atCard == this.currentSize+1){
             this.addToTail(val);
             return;
         }
 
         this.currentSize++;
         let cur = this.head;
-        for(let i = 1; i < atIndex-1; i++){
+        for(let i = 1; i < atCard-1; i++){
             cur = cur.next;
         }
         let add = new DLSNode(val, cur, cur.next);
@@ -99,22 +99,22 @@ class DoublyLinkedList{
         add.next.prev = add;
 
     } 
-    removeAtIndex(atIndex){
-        if(atIndex < 1 || atIndex>this.currentSize){
+    removeAtIndex(atCard){
+        if(atCard < 1 || atCard>this.currentSize){
             return;
         }
         
-        if(atIndex == 1){
+        if(atCard == 1){
             this.removeFromHead();
             return;
         }
-        if(atIndex == this.currentSize){
+        if(atCard == this.currentSize){
             this.removeFromTail();
             return;
         }
         this.currentSize--;
         let cur = this.head;
-        for(let i = 1; i <= atIndex-1; i++){
+        for(let i = 1; i <= atCard-1; i++){
             cur = cur.next;
         }
         cur.prev.next = cur.next;
