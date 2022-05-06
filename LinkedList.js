@@ -1,4 +1,6 @@
-
+//git add .
+//git commit -m ""
+//git push origin head:master
 class LSNode{
     constructor(val, next = null){
         this.val = val;

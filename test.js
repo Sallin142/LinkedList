@@ -2,6 +2,7 @@ const LinkedList = require('./LinkedList.js');
 const Stack = require('./Stack.js');
 const Queue = require('./Queue.js');
 const DoublyLinkedList = require('./DoublyLinkedList.js');
+const Deque = require('./Deque.js');
 // const ls1 = new LinkedList();
 // ls1.addToHead(4);
 // ls1.addToHead(3);
@@ -60,7 +61,7 @@ const DoublyLinkedList = require('./DoublyLinkedList.js');
 // q1.printQueue();
 // q2.printQueue();
 
-let DL1 = new DoublyLinkedList;
+let DL1 = new Deque;
 for(let i = 1; i <= 10; i++){
     DL1.addToHead(i);
 }
