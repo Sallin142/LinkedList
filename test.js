@@ -3,6 +3,7 @@ const Stack = require('./Stack.js');
 const Queue = require('./Queue.js');
 const DoublyLinkedList = require('./DoublyLinkedList.js');
 const Deque = require('./Deque.js');
+const Player = require('./Player.js');
 // const ls1 = new LinkedList();
 // ls1.addToHead(4);
 // ls1.addToHead(3);
@@ -62,6 +63,13 @@ const Deque = require('./Deque.js');
 // q2.printQueue();
 
 let DL1 = new Deque();
+DL1.shuffle(3);
+let P1 = new Player(5);
 
-DL1.printDeque();
+for(let i = 0; i < 10; i++){
+    P1.addToHand(DL1.popFromTop());
+}
+
+P1.showHand();
+
 
