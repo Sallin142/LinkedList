@@ -39,7 +39,7 @@ class Deque extends DoublyLinkedList{
     pushFromBottom(val){
         super.addToTail(val);
     }
-    shuffle(times){
+    shuffle(times=1){
         for(let i = 0; i < times; i++){
             for(let j = 0; j < this.currentSize; j++){
                 super.swap(Math.floor(Math.random() * this.currentSize)+1,Math.floor(Math.random() * this.currentSize)+1);
